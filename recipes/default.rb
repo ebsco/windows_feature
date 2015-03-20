@@ -10,7 +10,7 @@
 # Install the mixlibary-core gem and it's dependencies.
 # This is required for the manage_feature LWRP to work.
 
-gem_version="0.0.13"
+gem_version="0.0.14"
 
 myexecuteaction = execute 'gem update --system' do
   not_if do

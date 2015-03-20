@@ -27,6 +27,8 @@ Include the Windows_Feature cookbook default recipe in another to recipe to prov
       action :install
     end
 
+Also see https://github.com/ebsco/windows_feature/sample_recipes/sample.rb
+
 ## License and Authors
 
 Author:: Mark Lynch (git_id: gitmlynch)
