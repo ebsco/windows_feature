@@ -1,6 +1,6 @@
 [![GitHub](http://img.shields.io/badge/github-ebsco/windows_feature-blue.svg)](https://github.com/ebsco/windows_feature)
 
-[![Cookbook Version](https://badge.fury.io/rb/windows_feature.svg)](https://github.com/ebsco/windows_feature/releases)
+[![Cookbook Version](https://badge.fury.io/gh/ebsco%2Fwindows_feature.svg)](https://github.com/ebsco/windows_feature/releases)
 [![License](http://img.shields.io/badge/license-Apache2-yellowgreen.svg)](https://github.com/ebsco/windows_feature/blob/master/LICENSE.txt)
 
 # Windows_Feature Cookbook
@@ -18,16 +18,9 @@ None
 ## Usage
 
 ### default
-Include the Windows_Feature cookbook default recipe in another to recipe to provide access to Windows_Feature LWRP that makes use of the mixlibrary-core windows feature support.
-
-#### Sample Resource
-
-    windows_feature_manage_feature "#{cookbook_name}_install_Basic_Auth_Feature" do
-      feature_name "Web-Basic-Auth"
-      action :install
-    end
-
-Also see https://github.com/ebsco/windows_feature/sample_recipes/sample.rb
+* Include the windows_feature cookbook default recipe in another recipe to provide access to windows_feature LWRP that makes use of the mixlibrary-core windows feature support.
+* Add windows_feature_manage_feature resource calls to your recipe to use the LWRP.
+    * [LWRP Usage Sample](https://github.com/ebsco/windows_feature/sample_recipes/sample.rb)
 
 ## License and Authors
 
