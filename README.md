@@ -1,3 +1,8 @@
+[![GitHub](http://img.shields.io/badge/github-ebsco/windows_feature-blue.svg)](https://github.com/ebsco/windows_feature)
+
+[![Cookbook Version](https://badge.fury.io/rb/windows_feature.svg)](https://github.com/ebsco/windows_feature/releases)
+[![License](http://img.shields.io/badge/license-Apache2-yellowgreen.svg)](https://github.com/ebsco/windows_feature/blob/master/LICENSE.txt)
+
 # Windows_Feature Cookbook
 
 Provides an LWRP that facilitates access to the mixlibrary-core gem windows feature support.
@@ -17,10 +22,10 @@ Include the Windows_Feature cookbook default recipe in another to recipe to prov
 
 #### Sample Resource
 
-windows_feature_manage_feature "#{cookbook_name}_install_Basic_Auth_Feature" do
-  feature_name "Web-Basic-Auth"
-  action :install
-end
+    windows_feature_manage_feature "#{cookbook_name}_install_Basic_Auth_Feature" do
+      feature_name "Web-Basic-Auth"
+      action :install
+    end
 
 ## License and Authors
 
