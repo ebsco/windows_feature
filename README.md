@@ -1,6 +1,6 @@
 # Windows_Feature Cookbook
 
-Facilitates access to the mixlibrary-core windows feature support.
+Provides an LWRP that facilitates access to the mixlibrary-core gem windows feature support.
 
 ## Supported Platforms
 

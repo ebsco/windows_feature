@@ -53,10 +53,6 @@ end
 
 def load_current_resource
 
-  if @new_resource.feature_name.to_s.strip.length == 0
-    raise ("feature_name cannot be '#{@new_resource.feature_name}'. Must match the name of an available Windows Feature or Role, e.g. Web-Basic-Auth")
-  end
-
   require 'mixlibrary/core/windows/features'
 
   begin
@@ -65,15 +61,22 @@ def load_current_resource
 
   @feature = Mixlibrary::Core::Windows::Features.new(@new_resource.feature_name)
 
-  # Initialize the current_resource to false that way we always run the
-  # idempotency check which determines if the resource is in the desired state
-  @current_resource.exists = false
+  if @feature.is_feature_available?
 
-  # Use Windows Features object to do idompotency check.
-  if @feature.is_installed?
-    @current_resource.exists = true
+    # Initialize the current_resource to false that way we always run the
+    # idempotency check which determines if the resource is in the desired state
+    @current_resource.exists = false
+
+    # Use Windows Features object to do idompotency check.
+    if @feature.is_installed?
+      @current_resource.exists = true
+    end
+  else
+    raise ArgumentError, "'#{@new_resource.feature_name}' is not an available feature/role on the target windows server. Raising an exception."
   end
 
+  rescue ArgumentError => e
+    raise e
   rescue => e
     Chef::Log.error("#{cookbook_name}_providers/manager_feature:load_current_resource - Failed to initialize instance of Mixlibrary::Core::Windows::Features.new(#{@new_resource.feature_name})")
     raise e
