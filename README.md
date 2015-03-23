@@ -20,7 +20,7 @@ None
 ### default
 * Include the windows_feature cookbook default recipe in another recipe to provide access to windows_feature LWRP that makes use of the mixlibrary-core windows feature support.
 * Add windows_feature_manage_feature resource calls to your recipe to use the LWRP.
-    * [LWRP Usage Sample](https://github.com/ebsco/windows_feature/sample_recipes/sample.rb)
+    * [LWRP Usage Sample](https://github.com/ebsco/windows_feature/blob/master/sample_recipes/sample.rb)
 
 ## License and Authors
 

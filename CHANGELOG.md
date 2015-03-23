@@ -1,3 +1,7 @@
+## 0.1.3
+ * Corrected a broken link in the README.md.
+ * No code changes.
+
 ## 0.1.2
  * Improved feature validation in load_current_resource by calling is_feature_available?() method in Mixlibrary::Core::Windows::Features in providers/manage_feature.rb.
  * Updated and corrected README.md formatting.

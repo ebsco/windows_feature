@@ -5,4 +5,4 @@ license          'All rights reserved'
 description      'Provides an LWRP that facilitates access to the mixlibrary-core gem windows feature support.'
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 
-version          '0.1.2'
+version          '0.1.3'
