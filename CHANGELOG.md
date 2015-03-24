@@ -1,3 +1,6 @@
+## 0.1.4
+ * Corrected a bug in the sample.rb file.
+
 ## 0.1.3
  * Corrected a broken link in the README.md.
  * No code changes.

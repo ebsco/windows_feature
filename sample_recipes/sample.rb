@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include 'windows_feature/default'
+include_recipe 'windows_feature::default'
 
 windows_feature_manage_feature "#{cookbook_name}_install_Basic_Auth_Feature" do
   feature_name "Web-Basic-Auth"
