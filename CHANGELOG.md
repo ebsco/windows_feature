@@ -1,3 +1,6 @@
+## 1.0.0
+ * CI System integration
+   
 ## 0.1.4
  * Corrected a bug in the sample.rb file.
 
