@@ -6,3 +6,4 @@ description      'Provides an LWRP that facilitates access to the mixlibrary-cor
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 
 version          '1.0.0' #Automatically versioned by CI system.  This version will always be out of date.
+
