@@ -10,7 +10,7 @@
 # Install the mixlibary-core gem and it's dependencies.
 # This is required for the manage_feature LWRP to work.
 
-gem_version="0.0.14"
+gem_version="0.0.15"
 
 myexecuteaction = execute "#{cookbook_name}_gem_update" do
   command 'gem update --system'
